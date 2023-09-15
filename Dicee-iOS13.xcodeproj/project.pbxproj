@@ -10,10 +10,12 @@
 		ADAD913C22B0FDAE007B460A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADAD913B22B0FDAE007B460A /* README.md */; };
 		ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0DFFC22AFA6090030352D /* AppDelegate.swift */; };
 		ADB0E00122AFA6090030352D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0E00022AFA6090030352D /* ViewController.swift */; };
-		ADB0E00422AFA6090030352D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB0E00222AFA6090030352D /* Main.storyboard */; };
 		ADB0E00622AFA60E0030352D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB0E00522AFA60E0030352D /* Assets.xcassets */; };
 		ADB0E00922AFA60E0030352D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */; };
 		ADE1FB1422B39F0200DD2BD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */; };
+		DB1A619A2AA4C32E00181B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1A61982AA4C32E00181B7A /* Main.storyboard */; };
+		DBEB01302AA8FCB70076CF98 /* PopUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB012F2AA8FCB70076CF98 /* PopUpWindow.swift */; };
+		DBEB01322AAE6D510076CF98 /* gifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB01312AAE6D510076CF98 /* gifLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,13 @@
 		ADB0DFF922AFA6090030352D /* Dicee-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicee-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB0DFFC22AFA6090030352D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADB0E00022AFA6090030352D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADB0E00322AFA6090030352D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADB0E00522AFA60E0030352D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB0E00822AFA60E0030352D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB0E00A22AFA60E0030352D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB1A61992AA4C32E00181B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBEB012F2AA8FCB70076CF98 /* PopUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWindow.swift; sourceTree = "<group>"; };
+		DBEB01312AAE6D510076CF98 /* gifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +66,12 @@
 				ADB0DFFC22AFA6090030352D /* AppDelegate.swift */,
 				ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */,
 				ADB0E00022AFA6090030352D /* ViewController.swift */,
-				ADB0E00222AFA6090030352D /* Main.storyboard */,
+				DB1A61982AA4C32E00181B7A /* Main.storyboard */,
 				ADB0E00522AFA60E0030352D /* Assets.xcassets */,
 				ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */,
 				ADB0E00A22AFA60E0030352D /* Info.plist */,
+				DBEB012F2AA8FCB70076CF98 /* PopUpWindow.swift */,
+				DBEB01312AAE6D510076CF98 /* gifLoader.swift */,
 			);
 			path = "Dicee-iOS13";
 			sourceTree = "<group>";
@@ -131,7 +137,7 @@
 				ADB0E00922AFA60E0030352D /* LaunchScreen.storyboard in Resources */,
 				ADB0E00622AFA60E0030352D /* Assets.xcassets in Resources */,
 				ADAD913C22B0FDAE007B460A /* README.md in Resources */,
-				ADB0E00422AFA6090030352D /* Main.storyboard in Resources */,
+				DB1A619A2AA4C32E00181B7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB0E00122AFA6090030352D /* ViewController.swift in Sources */,
+				DBEB01322AAE6D510076CF98 /* gifLoader.swift in Sources */,
+				DBEB01302AA8FCB70076CF98 /* PopUpWindow.swift in Sources */,
 				ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */,
 				ADE1FB1422B39F0200DD2BD6 /* SceneDelegate.swift in Sources */,
 			);
@@ -151,20 +159,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ADB0E00222AFA6090030352D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADB0E00322AFA6090030352D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ADB0E00822AFA60E0030352D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DB1A61982AA4C32E00181B7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB1A61992AA4C32E00181B7A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

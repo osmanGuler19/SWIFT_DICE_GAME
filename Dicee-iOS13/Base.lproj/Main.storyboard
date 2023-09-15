@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,15 +14,146 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dicee_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Dv5-9y-TT0" userLabel="Background Image">
+                                <rect key="frame" x="0.0" y="-33" width="375" height="811"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Who-lz-CP0">
+                                <rect key="frame" x="20" y="437.66666666666669" width="80.666666666666671" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9P-lu-AZh" userLabel="Player 1 Dice 1">
+                                <rect key="frame" x="20" y="527.66666666666663" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Y24-S9-XdG"/>
+                                    <constraint firstAttribute="width" constant="128" id="oQh-Vs-rFS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxh-jj-9SO" userLabel="Player 1 Score Label">
+                                <rect key="frame" x="187.66666666666666" y="591.66666666666663" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8eL-6z-AD8" userLabel="Player 1 Dice 2">
+                                <rect key="frame" x="227" y="527.66666666666663" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="CbU-A0-rUC"/>
+                                    <constraint firstAttribute="height" constant="128" id="hAQ-ed-q0V"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMX-r1-C2b" userLabel="Seperator">
+                                <rect key="frame" x="0.0" y="412.66666666666669" width="375" height="2"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sj5-zl-G6V" userLabel="Player 2">
+                                <rect key="frame" x="23" y="364.66666666666669" width="83" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XWs-8u-mW1" userLabel="Player 2 Dice 1">
+                                <rect key="frame" x="20" y="171.66666666666666" width="128" height="127.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="2md-KS-sLi"/>
+                                    <constraint firstAttribute="height" constant="128" id="b6c-1K-fOY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfS-fq-vAY" userLabel="Player 2 Score Label">
+                                <rect key="frame" x="187.66666666666666" y="235.66666666666666" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kWR-UL-KVp" userLabel="Player 2 Dice 2">
+                                <rect key="frame" x="227" y="171.66666666666666" width="128" height="127.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="YCi-JY-u59"/>
+                                    <constraint firstAttribute="height" constant="128" id="g5x-WK-XnN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoc-le-9JK" userLabel="Player 1 Button">
+                                <rect key="frame" x="152" y="714.66666666666663" width="71" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="DICE !"/>
+                                <connections>
+                                    <action selector="diceForPlayer1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lni-sG-SNE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ws-gF-K9I" userLabel="Player 2 Button">
+                                <rect key="frame" x="152" y="77.666666666666671" width="71" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="DICE !"/>
+                                <connections>
+                                    <action selector="diceForPlayer2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V6i-js-Hzc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="Xoc-le-9JK" firstAttribute="top" secondItem="dMX-r1-C2b" secondAttribute="bottom" constant="300" id="2Yf-Bu-XBE"/>
+                            <constraint firstItem="Xoc-le-9JK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="45l-wH-JLK"/>
+                            <constraint firstItem="Sj5-zl-G6V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="AD1-Zp-h1h"/>
+                            <constraint firstItem="dMX-r1-C2b" firstAttribute="top" secondItem="kWR-UL-KVp" secondAttribute="bottom" constant="113" id="Fsj-mO-25d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dv5-9y-TT0" secondAttribute="bottom" id="I0i-eq-cyh"/>
+                            <constraint firstItem="XWs-8u-mW1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IF7-8P-aDo"/>
+                            <constraint firstItem="dMX-r1-C2b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IOM-lm-NRj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Who-lz-CP0" secondAttribute="trailing" id="J7n-nU-FzW"/>
+                            <constraint firstItem="dMX-r1-C2b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="JUF-QP-w3i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="Dv5-9y-TT0" secondAttribute="leading" id="Jmi-Sk-hur"/>
+                            <constraint firstItem="dMX-r1-C2b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L5q-1G-wfn"/>
+                            <constraint firstItem="8eL-6z-AD8" firstAttribute="top" secondItem="dMX-r1-C2b" secondAttribute="bottom" constant="113" id="NTL-rZ-OzD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8eL-6z-AD8" secondAttribute="trailing" constant="20" id="Wuc-Hz-eX9"/>
+                            <constraint firstItem="AfS-fq-vAY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XhG-f7-uRh"/>
+                            <constraint firstItem="AfS-fq-vAY" firstAttribute="centerY" secondItem="XWs-8u-mW1" secondAttribute="centerY" id="ZH4-X3-zlJ"/>
+                            <constraint firstItem="mxh-jj-9SO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c9P-lu-AZh" secondAttribute="trailing" constant="20" id="ZqF-8K-OED"/>
+                            <constraint firstItem="dMX-r1-C2b" firstAttribute="top" secondItem="Sj5-zl-G6V" secondAttribute="bottom" constant="25" id="aYW-h2-8QP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dv5-9y-TT0" secondAttribute="trailing" id="e61-8M-5aW"/>
+                            <constraint firstItem="dMX-r1-C2b" firstAttribute="top" secondItem="XWs-8u-mW1" secondAttribute="bottom" constant="113" id="edJ-pM-a3N"/>
+                            <constraint firstItem="Dv5-9y-TT0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-80" id="fea-Uv-FWZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="dMX-r1-C2b" secondAttribute="leading" id="g02-q1-iyN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWR-UL-KVp" secondAttribute="trailing" constant="20" id="gFx-0v-lNI"/>
+                            <constraint firstItem="dMX-r1-C2b" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="1" id="ghV-Lc-buX"/>
+                            <constraint firstItem="dMX-r1-C2b" firstAttribute="top" secondItem="5ws-gF-K9I" secondAttribute="bottom" constant="300" id="hJO-27-8cG"/>
+                            <constraint firstItem="mxh-jj-9SO" firstAttribute="centerY" secondItem="c9P-lu-AZh" secondAttribute="centerY" id="hgx-XS-h4p"/>
+                            <constraint firstItem="8eL-6z-AD8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mxh-jj-9SO" secondAttribute="trailing" constant="20" id="hzA-UW-yjx"/>
+                            <constraint firstItem="kWR-UL-KVp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AfS-fq-vAY" secondAttribute="trailing" constant="20" id="j9t-8Q-Qhm"/>
+                            <constraint firstItem="Who-lz-CP0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m4m-Hd-XYk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sj5-zl-G6V" secondAttribute="trailing" id="obZ-s5-7jm"/>
+                            <constraint firstItem="c9P-lu-AZh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pzw-qg-age"/>
+                            <constraint firstItem="AfS-fq-vAY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XWs-8u-mW1" secondAttribute="trailing" constant="20" id="qSQ-9z-sIn"/>
+                            <constraint firstItem="Who-lz-CP0" firstAttribute="top" secondItem="dMX-r1-C2b" secondAttribute="bottom" constant="23" id="r6a-gv-Ekh"/>
+                            <constraint firstItem="mxh-jj-9SO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xYR-lp-6O9"/>
+                            <constraint firstItem="c9P-lu-AZh" firstAttribute="top" secondItem="dMX-r1-C2b" secondAttribute="bottom" constant="113" id="ydr-in-Etx"/>
+                            <constraint firstItem="5ws-gF-K9I" firstAttribute="centerX" secondItem="dMX-r1-C2b" secondAttribute="centerX" id="yut-5R-r19"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="player1Button" destination="Xoc-le-9JK" id="C9K-Ku-kkm"/>
+                        <outlet property="player1Dice1" destination="c9P-lu-AZh" id="HXM-0Q-nkH"/>
+                        <outlet property="player1Dice2" destination="8eL-6z-AD8" id="sz6-jI-3zv"/>
+                        <outlet property="player1Label" destination="Who-lz-CP0" id="fwq-hH-EcF"/>
+                        <outlet property="player1ScoreLabel" destination="mxh-jj-9SO" id="3Yy-dt-3yU"/>
+                        <outlet property="player2Button" destination="5ws-gF-K9I" id="hmc-0Q-nbI"/>
+                        <outlet property="player2Dice1" destination="XWs-8u-mW1" id="itL-Lq-4Mj"/>
+                        <outlet property="player2Dice2" destination="kWR-UL-KVp" id="CEz-fK-C72"/>
+                        <outlet property="player2Label" destination="Sj5-zl-G6V" id="OJ6-HB-vgx"/>
+                        <outlet property="player2ScoreLabel" destination="AfS-fq-vAY" id="laz-eC-q64"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GreenBackground" width="444.66665649414062" height="414.33334350585938"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
