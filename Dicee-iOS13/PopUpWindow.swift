@@ -9,10 +9,18 @@
 
 import Foundation
 import UIKit
+import Gifu
+
+@objc protocol RestartGame: AnyObject{
+    @objc func restartTheGame(_ sender: UIButton)
+}
+
 
 class PopUpWindow: UIViewController {
 
     private let popUpWindowView = PopUpWindowView()
+    
+    
     
     init(title: String, buttontext: String) {
         super.init(nibName: nil, bundle: nil)
@@ -40,10 +48,12 @@ private class PopUpWindowView: UIView {
     
     let popupView = UIView(frame: CGRect.zero)
     let popupTitle = UILabel(frame: CGRect.zero)
-    let gifView = UIImageView(frame: CGRect.zero)
+    let gifView = GIFImageView(frame: CGRect.zero)
     let popupButton = UIButton(frame: CGRect.zero)
     
     let BorderWidth: CGFloat = 2.0
+    
+    weak var delegate: RestartGame?
     
     init() {
         super.init(frame: CGRect.zero)
@@ -66,31 +76,15 @@ private class PopUpWindowView: UIView {
         popupTitle.numberOfLines = 1
         popupTitle.textAlignment = .center
         
-        // Popup Gif
-        UIImage.fetchGif { [unowned self] result in
-            
-            switch result {
-            case .success(let gif):
-
-                // Update UI using main thread
-                DispatchQueue.main.async {
-                    
-                    // Update collection view content
-                    self.gifView.image = gif
-                }
-                
-            case .failure(let error):
-                print("Request failed with error: \(error)")
-            }
-        }
-        gifView.frame = CGRect(x: 20.0, y: 390.0, width: popupView.frame.size.width - 10, height: 150.0)
-        
+        gifView.frame = CGRect(x: 20.0, y: 390.0, width: popupView.frame.size.width - 20, height: 180.0)
+        gifView.animate(withGIFNamed: "pepe")
         
         
         // Popup Button
         popupButton.setTitleColor(UIColor.white, for: .normal)
         popupButton.titleLabel?.font = UIFont.systemFont(ofSize: 23.0, weight: .bold)
         popupButton.backgroundColor = UIColor.colorFromHex("#9E1C40")
+        popupButton.addTarget(delegate, action: #selector(delegate?.restartTheGame), for: .touchUpInside)
         
         popupView.addSubview(popupTitle)
         popupView.addSubview(gifView)
@@ -103,7 +97,7 @@ private class PopUpWindowView: UIView {
         // PopupView constraints
         popupView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            popupView.widthAnchor.constraint(equalToConstant: 293),
+            popupView.widthAnchor.constraint(equalToConstant: 350),
             popupView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             popupView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
             ])

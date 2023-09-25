@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39A0405680E7A98348528461 /* Pods_Dicee_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2353110501E65966187933EE /* Pods_Dicee_iOS13.framework */; };
 		ADAD913C22B0FDAE007B460A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADAD913B22B0FDAE007B460A /* README.md */; };
 		ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0DFFC22AFA6090030352D /* AppDelegate.swift */; };
 		ADB0E00122AFA6090030352D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0E00022AFA6090030352D /* ViewController.swift */; };
@@ -14,11 +15,14 @@
 		ADB0E00922AFA60E0030352D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */; };
 		ADE1FB1422B39F0200DD2BD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */; };
 		DB1A619A2AA4C32E00181B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1A61982AA4C32E00181B7A /* Main.storyboard */; };
+		DBB1CD532AC204270036DD2A /* pepe.gif in Resources */ = {isa = PBXBuildFile; fileRef = DBB1CD522AC204270036DD2A /* pepe.gif */; };
 		DBEB01302AA8FCB70076CF98 /* PopUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB012F2AA8FCB70076CF98 /* PopUpWindow.swift */; };
 		DBEB01322AAE6D510076CF98 /* gifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB01312AAE6D510076CF98 /* gifLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2353110501E65966187933EE /* Pods_Dicee_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dicee_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF0A4869C51830CE4F3835B /* Pods-Dicee-iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicee-iOS13.release.xcconfig"; path = "Target Support Files/Pods-Dicee-iOS13/Pods-Dicee-iOS13.release.xcconfig"; sourceTree = "<group>"; };
 		ADAD913B22B0FDAE007B460A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADB0DFF922AFA6090030352D /* Dicee-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicee-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB0DFFC22AFA6090030352D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +32,10 @@
 		ADB0E00A22AFA60E0030352D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DB1A61992AA4C32E00181B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBB1CD522AC204270036DD2A /* pepe.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pepe.gif; sourceTree = "<group>"; };
 		DBEB012F2AA8FCB70076CF98 /* PopUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWindow.swift; sourceTree = "<group>"; };
 		DBEB01312AAE6D510076CF98 /* gifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoader.swift; sourceTree = "<group>"; };
+		F6885261F353106257F009B7 /* Pods-Dicee-iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicee-iOS13.debug.xcconfig"; path = "Target Support Files/Pods-Dicee-iOS13/Pods-Dicee-iOS13.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A0405680E7A98348528461 /* Pods_Dicee_iOS13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +56,8 @@
 				ADAD913B22B0FDAE007B460A /* README.md */,
 				ADB0DFFB22AFA6090030352D /* Dicee-iOS13 */,
 				ADB0DFFA22AFA6090030352D /* Products */,
+				DE4E78AB740643BC86C39962 /* Pods */,
+				D944ADB46290DFB822BDEDA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +80,27 @@
 				ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */,
 				ADB0E00A22AFA60E0030352D /* Info.plist */,
 				DBEB012F2AA8FCB70076CF98 /* PopUpWindow.swift */,
+				DBB1CD522AC204270036DD2A /* pepe.gif */,
 				DBEB01312AAE6D510076CF98 /* gifLoader.swift */,
 			);
 			path = "Dicee-iOS13";
+			sourceTree = "<group>";
+		};
+		D944ADB46290DFB822BDEDA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2353110501E65966187933EE /* Pods_Dicee_iOS13.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE4E78AB740643BC86C39962 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6885261F353106257F009B7 /* Pods-Dicee-iOS13.debug.xcconfig */,
+				AAF0A4869C51830CE4F3835B /* Pods-Dicee-iOS13.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADB0E00D22AFA60E0030352D /* Build configuration list for PBXNativeTarget "Dicee-iOS13" */;
 			buildPhases = (
+				74C30CCC0FD227397098FC02 /* [CP] Check Pods Manifest.lock */,
 				ADB0DFF522AFA6090030352D /* Sources */,
 				ADB0DFF622AFA6090030352D /* Frameworks */,
 				ADB0DFF722AFA6090030352D /* Resources */,
+				AEDB061998D49A30BED35F27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,12 +165,55 @@
 			files = (
 				ADB0E00922AFA60E0030352D /* LaunchScreen.storyboard in Resources */,
 				ADB0E00622AFA60E0030352D /* Assets.xcassets in Resources */,
+				DBB1CD532AC204270036DD2A /* pepe.gif in Resources */,
 				ADAD913C22B0FDAE007B460A /* README.md in Resources */,
 				DB1A619A2AA4C32E00181B7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74C30CCC0FD227397098FC02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dicee-iOS13-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEDB061998D49A30BED35F27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dicee-iOS13/Pods-Dicee-iOS13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dicee-iOS13/Pods-Dicee-iOS13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dicee-iOS13/Pods-Dicee-iOS13-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ADB0DFF522AFA6090030352D /* Sources */ = {
@@ -294,6 +366,7 @@
 		};
 		ADB0E00E22AFA60E0030352D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6885261F353106257F009B7 /* Pods-Dicee-iOS13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +384,7 @@
 		};
 		ADB0E00F22AFA60E0030352D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAF0A4869C51830CE4F3835B /* Pods-Dicee-iOS13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

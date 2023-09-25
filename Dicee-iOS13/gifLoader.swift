@@ -34,8 +34,7 @@ extension UIImage {
         guard let source = CGImageSourceCreateWithData(data as CFData, nil) else {
             print("image doesn't exist")
             return nil
-        }
-        
+        } 
         return UIImage.animatedImageWithSource(source)
     }
     

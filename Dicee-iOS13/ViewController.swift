@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+
+
+class ViewController: UIViewController,RestartGame {
     
     @IBOutlet weak var player1Label: UILabel!
     @IBOutlet weak var player2Label: UILabel!
@@ -30,6 +32,8 @@ class ViewController: UIViewController {
     var isFirstPlayerDiced = false
     var isSecondPlayerDiced = false
     var isGameFinished = false
+    var player1Score: Int?
+    var player2Score: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,7 @@ class ViewController: UIViewController {
     
     func inverPlayer2Views(){
         player2Label.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
+        player2ScoreLabel.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         player2Button.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         player2Dice1.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         player2Dice2.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
@@ -54,8 +59,10 @@ class ViewController: UIViewController {
         let total = dice1! + dice2!
         if(player == PlayerType.PLAYER1){
             player1ScoreLabel.text = String(total)
+            player1Score = total
         }else{
             player2ScoreLabel.text = String(total)
+            player2Score = total
         }
         
         diceView1.image = getDiceView(num: dice1!)
@@ -82,17 +89,6 @@ class ViewController: UIViewController {
         
     }
     
-    func checkGameFinished(){
-        if(isFirstPlayerDiced && isSecondPlayerDiced){
-            finishTheGame()
-        }
-    }
-    
-    func finishTheGame(){
-        var popUpWindow: PopUpWindow!
-        popUpWindow = PopUpWindow(title: "Error", buttontext: "OK")
-        self.present(popUpWindow, animated: true, completion: nil)
-    }
     
     @IBAction func diceForPlayer1(_ sender: Any) {
         if(!isFirstPlayerDiced){
@@ -111,5 +107,38 @@ class ViewController: UIViewController {
     }
     
     
+    func checkGameFinished(){
+        if(isFirstPlayerDiced && isSecondPlayerDiced){
+            finishTheGame()
+        }
+    }
+    
+    func finishTheGame(){
+        var popUpWindow: PopUpWindow!
+        var winningMessage = ""
+        guard let value_one = player1Score, let value_two = player2Score else {
+                print("Some value is nil")
+                return
+            }
+        if(value_one > value_two){
+            winningMessage = "Player 1 WON!"
+        }
+        else if(value_two > value_one){
+            winningMessage = "Palyer 2 WON!"
+        }else{
+            winningMessage = "It is a DRAW, AMAZING!"
+        }
+        popUpWindow = PopUpWindow(title: winningMessage, buttontext: "RETRY")
+        self.present(popUpWindow, animated: true, completion: nil)
+        
+    }
+    
+    func restartTheGame(_ sender: UIButton) {
+        self.view.setNeedsDisplay()
+        self.view.layoutIfNeeded()
+    }
+    
+    
 }
+
 
