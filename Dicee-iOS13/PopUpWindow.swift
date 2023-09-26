@@ -19,7 +19,7 @@ import Gifu
 class PopUpWindow: UIViewController {
 
     private let popUpWindowView = PopUpWindowView()
-    
+    weak var delegate: RestartGame?
     
     
     init(title: String, buttontext: String) {
@@ -29,6 +29,7 @@ class PopUpWindow: UIViewController {
         
         popUpWindowView.popupTitle.text = title
         popUpWindowView.popupButton.setTitle(buttontext, for: .normal)
+        popUpWindowView.popupButton.addTarget(delegate, action: #selector(delegate?.restartTheGame), for: .touchUpInside)
         popUpWindowView.popupButton.addTarget(self, action: #selector(dismissView), for: .touchUpInside)
         view = popUpWindowView
     }
@@ -53,7 +54,7 @@ private class PopUpWindowView: UIView {
     
     let BorderWidth: CGFloat = 2.0
     
-    weak var delegate: RestartGame?
+    
     
     init() {
         super.init(frame: CGRect.zero)
@@ -84,7 +85,6 @@ private class PopUpWindowView: UIView {
         popupButton.setTitleColor(UIColor.white, for: .normal)
         popupButton.titleLabel?.font = UIFont.systemFont(ofSize: 23.0, weight: .bold)
         popupButton.backgroundColor = UIColor.colorFromHex("#9E1C40")
-        popupButton.addTarget(delegate, action: #selector(delegate?.restartTheGame), for: .touchUpInside)
         
         popupView.addSubview(popupTitle)
         popupView.addSubview(gifView)

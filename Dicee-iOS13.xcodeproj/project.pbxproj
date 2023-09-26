@@ -17,7 +17,6 @@
 		DB1A619A2AA4C32E00181B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1A61982AA4C32E00181B7A /* Main.storyboard */; };
 		DBB1CD532AC204270036DD2A /* pepe.gif in Resources */ = {isa = PBXBuildFile; fileRef = DBB1CD522AC204270036DD2A /* pepe.gif */; };
 		DBEB01302AA8FCB70076CF98 /* PopUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB012F2AA8FCB70076CF98 /* PopUpWindow.swift */; };
-		DBEB01322AAE6D510076CF98 /* gifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB01312AAE6D510076CF98 /* gifLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		DB1A61992AA4C32E00181B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBB1CD522AC204270036DD2A /* pepe.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pepe.gif; sourceTree = "<group>"; };
 		DBEB012F2AA8FCB70076CF98 /* PopUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWindow.swift; sourceTree = "<group>"; };
-		DBEB01312AAE6D510076CF98 /* gifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoader.swift; sourceTree = "<group>"; };
 		F6885261F353106257F009B7 /* Pods-Dicee-iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicee-iOS13.debug.xcconfig"; path = "Target Support Files/Pods-Dicee-iOS13/Pods-Dicee-iOS13.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +79,6 @@
 				ADB0E00A22AFA60E0030352D /* Info.plist */,
 				DBEB012F2AA8FCB70076CF98 /* PopUpWindow.swift */,
 				DBB1CD522AC204270036DD2A /* pepe.gif */,
-				DBEB01312AAE6D510076CF98 /* gifLoader.swift */,
 			);
 			path = "Dicee-iOS13";
 			sourceTree = "<group>";
@@ -221,7 +218,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB0E00122AFA6090030352D /* ViewController.swift in Sources */,
-				DBEB01322AAE6D510076CF98 /* gifLoader.swift in Sources */,
 				DBEB01302AA8FCB70076CF98 /* PopUpWindow.swift in Sources */,
 				ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */,
 				ADE1FB1422B39F0200DD2BD6 /* SceneDelegate.swift in Sources */,

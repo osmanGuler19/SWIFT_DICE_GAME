@@ -134,8 +134,19 @@ class ViewController: UIViewController,RestartGame {
     }
     
     func restartTheGame(_ sender: UIButton) {
-        self.view.setNeedsDisplay()
-        self.view.layoutIfNeeded()
+        player1ScoreLabel.text = nil
+        player2ScoreLabel.text = nil
+        player1Dice1.image = nil
+        player1Dice2.image = nil
+        player2Dice1.image = nil
+        player2Dice2.image = nil
+        isFirstPlayerDiced = false
+        isSecondPlayerDiced = false
+        isGameFinished = false
+        dice1 = nil
+        dice2 = nil
+        player1Score = nil
+        player2Score = nil
     }
     
     
